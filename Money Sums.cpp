@@ -17,12 +17,15 @@ void func(){
 	int n;
 	cin>>n;
 	vector<int>vec(n);
+	int totsum = 0;
 	for(int & x: vec){
 		cin>>x;
+		totsum+=x;
 	}
 
-	vector<vector<int>>ans(n+1, vector<int>(100001, false));
+	vector<vector<int>>ans(n+1, vector<int>(totsum+1, false));
 	ans[0][0] = true;
+
 	for(int i = 1; i<=n; i++){
 		ans[i][0] = true;
 		for(int j = 1; j<ans[i].size(); j++){
@@ -36,7 +39,7 @@ void func(){
 
 	int nos = 0;
 	vector<int>no_nos;
-	for(int i = 1; i<=100000; i++){
+	for(int i = 1; i<=totsum; i++){
 		if(ans[n][i]){
 			nos++;
 			no_nos.push_back(i);
