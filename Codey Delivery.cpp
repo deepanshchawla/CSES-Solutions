@@ -3,14 +3,14 @@ using namespace std;
 #define fast_io ios_base::sync_with_stdio(false);cin.tie(NULL)
 long long mod = 1000000007;
 
-void init_code(){
-	fast_io;
+// void init_code(){
+// 	fast_io;
 
-	#ifndef ONLINE_JUDGE
-	freopen("input.txt", "r", stdin);
-	freopen("output.txt", "w", stdout);
-	#endif
-}
+// 	#ifndef ONLINE_JUDGE
+// 	freopen("input.txt", "r", stdin);
+// 	freopen("output.txt", "w", stdout);
+// 	#endif
+// }
 
 
 void func(){
@@ -103,7 +103,7 @@ void func(){
 
 int main(){
 	fast_io;
-	init_code();
+	// init_code();
 
 	int n;
 	cin>>n;
